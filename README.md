@@ -25,3 +25,38 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## How to run the restAPI locally
+1. Install Docker Desktop if you don't have it.
+2. Clone the project https://github.com/gothinkster/realworld-example-apps into a different folder from your frontend.
+3. Open the project from your terminal and run command `docker-compose build`
+4. Run command `docker-compose up`
+
+## Project structure
+/app
+  /article
+    /components
+    /store
+    /types
+    /services
+      article.service.ts
+    article.routes
+  /globalFeed
+    /components
+      /globalFeed
+    globalFeed.routes
+  /shared
+    /components
+      /backendErrorMessages
+        backendErrorMessages.component.ts
+      /popularTags
+        popularTags.component.ts
+        /types
+        /store
+        /services
+    /types
+      article.interface.ts
+    /services
+      article.service.ts
+  app.routes
+main.ts
